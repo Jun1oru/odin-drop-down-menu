@@ -1,23 +1,10 @@
 import { createMenuDom } from "./menu-dom";
 
-export function firstFunction() {
-  console.log("First");
-}
-
-export function secondFunction() {
-  console.log("Second");
-}
-
-export function thirdFunction() {
-  console.log("Third");
-}
-
 class Menu {
   constructor(title, id, parentElement) {
     this.title = title;
     this.id = id;
     this.parentElement = parentElement;
-    this.elements = [];
   }
 
   get title() {
@@ -47,17 +34,5 @@ class Menu {
 
 export function createMenu(title, id, parentElement) {
   const newMenu = new Menu(title, id, parentElement);
-  return createMenuDom(
-    newMenu.title,
-    newMenu.id,
-    newMenu.parentElement,
-    newMenu,
-  );
-}
-
-export function createMenuElement(title, id, parentMenuId) {
-  const parentMenu = document.getElementById(parentMenuId);
-  console.log(title);
-  console.log(id);
-  console.log(parentMenu);
+  return createMenuDom(newMenu.title, newMenu.id, newMenu.parentElement);
 }

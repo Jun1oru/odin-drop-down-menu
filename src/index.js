@@ -1,7 +1,13 @@
-import { createMenu, createMenuElement } from "./menu";
+import { createMenu } from "./menu";
+import { createMenuElementDom } from "./menu-dom";
 import "./styles.css";
 
 const body = document.querySelector("body");
 createMenu("Test", "testMenu", body);
-const menu = document.getElementById("testMenu");
-createMenuElement("test2", "test3", menu);
+createMenuElementDom("Home", "homeElement", "testMenu", "https://google.com");
+createMenuElementDom(
+  "About",
+  "aboutElement",
+  "testMenu",
+  "https://youtube.com",
+);
