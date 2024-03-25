@@ -1,15 +1,16 @@
-import { firstFunction, secondFunction, thirdFunction } from "./menu";
+// import { firstFunction, secondFunction, thirdFunction } from "./menu";
 
-export function createMenu() {
+export function createMenuDom(title, id, parentElement, newMenu) {
   const menu = document.createElement("div");
   menu.classList.add("dropdown-menu");
+  menu.id = `${id}`;
 
-  let menuHidden = true;
+  // const menuHidden = true;
 
   const p = document.createElement("p");
-  p.textContent = "Menu";
+  p.textContent = `${title}`;
   p.classList.add("dropdown-menu-title");
-  p.addEventListener("click", () => {
+  /* p.addEventListener("click", () => {
     const liElements = menu.querySelectorAll("li");
     const fElement = document.getElementById("firstElement");
     const sElement = document.getElementById("secondElement");
@@ -26,11 +27,13 @@ export function createMenu() {
     }
     ul.classList.toggle("hide");
     menuHidden = !menuHidden;
-  });
+  }); */
 
   const ul = document.createElement("ul");
   ul.classList.add("dropdown-menu-list", "hide");
 
+  const menuElements = newMenu.elements;
+  console.log(menuElements);
   const firstElement = document.createElement("li");
   firstElement.id = "firstElement";
   const pFirst = document.createElement("p");
@@ -56,5 +59,5 @@ export function createMenu() {
   menu.appendChild(p);
   menu.appendChild(ul);
 
-  return menu;
+  parentElement.appendChild(menu);
 }
