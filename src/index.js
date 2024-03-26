@@ -2,7 +2,7 @@ import createMenu from "./menu";
 import createMenuElementDom from "./menu-dom";
 import "./styles.css";
 
-const body = document.querySelector("body");
+/* const body = document.querySelector("body");
 createMenu("Test", "testMenu", body);
 createMenuElementDom("Home", "homeElement", "testMenu", "https://google.com");
 createMenuElementDom(
@@ -10,4 +10,4 @@ createMenuElementDom(
   "aboutElement",
   "testMenu",
   "https://youtube.com",
-);
+); */
