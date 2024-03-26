@@ -1,4 +1,4 @@
-import createMenuDom from "./menu-dom";
+import { createMenuDom } from "./menu-dom";
 
 class Menu {
   constructor(title, id, parentElement) {

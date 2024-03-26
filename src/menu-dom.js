@@ -29,7 +29,7 @@ function createMenuDom(title, id, parentElement) {
   parentElement.appendChild(menu);
 }
 
-export function createMenuElementDom(title, id, parentMenuId, link) {
+function createMenuElementDom(title, id, parentMenuId, link) {
   const parentMenu = document.getElementById(parentMenuId);
   const ul = parentMenu.querySelector("ul");
 
@@ -50,4 +50,4 @@ export function createMenuElementDom(title, id, parentMenuId, link) {
   return ul.appendChild(element);
 }
 
-export default createMenuDom;
+export { createMenuDom, createMenuElementDom };
