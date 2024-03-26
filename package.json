@@ -1,7 +1,7 @@
 {
-  "name": "odin-drop-down-menu",
-  "version": "1.0.1",
-  "description": "odin-drop-down-menu",
+  "name": "odin-drop-down-menu-junioru",
+  "version": "1.0.2",
+  "description": "odin-drop-down-menu-junioru",
   "private": false,
   "main": "dist/main.js",
   "scripts": {
