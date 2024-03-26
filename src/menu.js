@@ -32,9 +32,7 @@ class Menu {
   }
 }
 
-function createMenu(title, id, parentElement) {
+export default function createMenu(title, id, parentElement) {
   const newMenu = new Menu(title, id, parentElement);
   return createMenuDom(newMenu.title, newMenu.id, newMenu.parentElement);
 }
-
-export { createMenu };
