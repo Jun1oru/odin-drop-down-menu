@@ -1,4 +1,4 @@
-import { createMenuDom } from "./menu-dom";
+import createMenuDom from "./menu-dom";
 
 class Menu {
   constructor(title, id, parentElement) {
@@ -32,7 +32,9 @@ class Menu {
   }
 }
 
-export function createMenu(title, id, parentElement) {
+function createMenu(title, id, parentElement) {
   const newMenu = new Menu(title, id, parentElement);
   return createMenuDom(newMenu.title, newMenu.id, newMenu.parentElement);
 }
+
+export default createMenu;

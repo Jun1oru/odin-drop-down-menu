@@ -1,5 +1,5 @@
-import { createMenu } from "./menu";
-import { createMenuElementDom } from "./menu-dom";
+import createMenu from "./menu";
+import createMenuElementDom from "./menu-dom";
 import "./styles.css";
 
 const body = document.querySelector("body");

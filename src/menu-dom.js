@@ -1,4 +1,4 @@
-export function createMenuDom(title, id, parentElement) {
+function createMenuDom(title, id, parentElement) {
   const menu = document.createElement("div");
   menu.classList.add("dropdown-menu");
   menu.id = `${id}`;
@@ -49,3 +49,5 @@ export function createMenuElementDom(title, id, parentMenuId, link) {
 
   return ul.appendChild(element);
 }
+
+export default createMenuDom;
