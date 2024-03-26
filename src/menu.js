@@ -37,4 +37,4 @@ function createMenu(title, id, parentElement) {
   return createMenuDom(newMenu.title, newMenu.id, newMenu.parentElement);
 }
 
-export default createMenu;
+export { createMenu };
